@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from backend.services.ai_services import predict_traffic
-from backend.services.weather_services import fetch_weather_for_datetime
-from backend.services.spark_services import get_peak_hours
+from services.ai_services import predict_traffic
+from services.weather_services import fetch_weather_for_datetime
+from services.spark_services import get_peak_hours
 from fastapi.middleware.cors import CORSMiddleware
 import os
 
